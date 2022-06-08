@@ -31,15 +31,39 @@ class TaskListViewController: UIViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let navVC = segue.destination as? UINavigationController,
-              let addTVC = navVC.viewControllers.first as? TaskListViewController else {
+              let addTVC = navVC.viewControllers.first as? AddTaskViewController else {
                   return
               }
-        
-        addTVC
+
+        addTVC.taskSubjectObservable.subscribe { [weak self] task in
+            guard let self = self else { return }
+            let priority = Priority(rawValue: self.segmentControl.selectedSegmentIndex - 1)
+            
+            var existingTask = self.tasks.value
+            existingTask.append(task.element!)
+            self.tasks.accept(existingTask)
+            
+            self.filterTasks(by: priority)
+        }
     }
     
     @IBAction func segmentControlDidChange(_ sender: UISegmentedControl) {
-        
+        let priority = Priority(rawValue: self.segmentControl.selectedSegmentIndex - 1)
+        filterTasks(by: priority)
+    }
+    
+    func filterTasks(by priority: Priority?) {
+        if priority == nil {
+            filteredTasks = tasks.value
+            tableView.reloadData()
+        } else {
+            self.tasks.map { tasks in
+                return tasks.filter { $0.priority == priority }
+            }.subscribe { [weak self] taskEvent in
+                self?.filteredTasks = taskEvent.element ?? []
+                self?.tableView.reloadData()
+            }.disposed(by: disposeBag)
+        }
     }
 }
 

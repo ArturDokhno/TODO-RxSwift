@@ -48,7 +48,7 @@
                     <navigationItem key="navigationItem" title="ToDo List" id="tss-LW-YW5">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="6b5-bj-Q0F">
                             <connections>
-                                <segue destination="JTg-96-mff" kind="show" id="BWp-Bd-ptz"/>
+                                <segue destination="ENk-1Z-QnY" kind="modal" id="BWp-Bd-ptz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -66,11 +66,11 @@
             <objects>
                 <viewController id="JTg-96-mff" customClass="AddTaskViewController" customModule="HelloRxSwift" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="k1d-56-Wsl">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="8Co-n9-m9l">
-                                <rect key="frame" x="10" y="98" width="404" height="32"/>
+                                <rect key="frame" x="10" y="66" width="404" height="32"/>
                                 <segments>
                                     <segment title="High"/>
                                     <segment title="Medium"/>
@@ -78,7 +78,7 @@
                                 </segments>
                             </segmentedControl>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter task" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="fyC-TM-WGe">
-                                <rect key="frame" x="10" y="159" width="394" height="34"/>
+                                <rect key="frame" x="10" y="127" width="394" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
@@ -108,7 +108,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hgQ-xS-TBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1817" y="98"/>
+            <point key="canvasLocation" x="2726.0869565217395" y="97.767857142857139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="KtU-eg-RsI">
@@ -127,6 +127,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QwJ-aV-Z2b" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="34.782608695652179" y="97.767857142857139"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="AxK-hG-Duf">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ENk-1Z-QnY" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="RPS-bk-IMp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="JTg-96-mff" kind="relationship" relationship="rootViewController" id="j4Z-AB-yk8"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LvP-ut-vw2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1815.9420289855075" y="97.767857142857139"/>
         </scene>
     </scenes>
     <resources>
