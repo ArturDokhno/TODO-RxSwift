@@ -7,23 +7,34 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		758C0D142850AAAB006CA012 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 758C0D132850AAAB006CA012 /* Main.storyboard */; };
 		75F2BFEB2850884300B639F7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F2BFEA2850884300B639F7 /* AppDelegate.swift */; };
 		75F2BFED2850884300B639F7 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F2BFEC2850884300B639F7 /* SceneDelegate.swift */; };
-		75F2BFEF2850884300B639F7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F2BFEE2850884300B639F7 /* ViewController.swift */; };
-		75F2BFF22850884300B639F7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F2BFF02850884300B639F7 /* Main.storyboard */; };
 		75F2BFF42850884400B639F7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F2BFF32850884400B639F7 /* Assets.xcassets */; };
 		75F2BFF72850884400B639F7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F2BFF52850884400B639F7 /* LaunchScreen.storyboard */; };
+		75F2C000285088CE00B639F7 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = 75F2BFFF285088CE00B639F7 /* RxCocoa */; };
+		75F2C002285088CE00B639F7 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 75F2C001285088CE00B639F7 /* RxSwift */; };
+		75F2C0072850A4AD00B639F7 /* Task.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F2C0062850A4AC00B639F7 /* Task.swift */; };
+		75F2C00B2850A52D00B639F7 /* TaskListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F2C00A2850A52D00B639F7 /* TaskListViewController.swift */; };
+		75F2C00D2850A53E00B639F7 /* AddTaskViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F2C00C2850A53E00B639F7 /* AddTaskViewController.swift */; };
+		75F2C0122850A84E00B639F7 /* TaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75F2C0102850A84E00B639F7 /* TaskTableViewCell.swift */; };
+		75F2C0132850A84E00B639F7 /* TaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 75F2C0112850A84E00B639F7 /* TaskTableViewCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		758C0D132850AAAB006CA012 /* Main.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		75F2BFE72850884300B639F7 /* HelloRxSwift.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HelloRxSwift.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F2BFEA2850884300B639F7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		75F2BFEC2850884300B639F7 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		75F2BFEE2850884300B639F7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		75F2BFF12850884300B639F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		75F2BFF32850884400B639F7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75F2BFF62850884400B639F7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		75F2BFF82850884400B639F7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		75F2C00528508C7D00B639F7 /* HelloRxSwift.playground */ = {isa = PBXFileReference; lastKnownFileType = file.playground; path = HelloRxSwift.playground; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
+		75F2C0062850A4AC00B639F7 /* Task.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Task.swift; sourceTree = "<group>"; };
+		75F2C00A2850A52D00B639F7 /* TaskListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListViewController.swift; sourceTree = "<group>"; };
+		75F2C00C2850A53E00B639F7 /* AddTaskViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddTaskViewController.swift; sourceTree = "<group>"; };
+		75F2C0102850A84E00B639F7 /* TaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskTableViewCell.swift; sourceTree = "<group>"; };
+		75F2C0112850A84E00B639F7 /* TaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TaskTableViewCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +42,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F2C002285088CE00B639F7 /* RxSwift in Frameworks */,
+				75F2C000285088CE00B639F7 /* RxCocoa in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +53,7 @@
 		75F2BFDE2850884300B639F7 = {
 			isa = PBXGroup;
 			children = (
+				75F2C00528508C7D00B639F7 /* HelloRxSwift.playground */,
 				75F2BFE92850884300B639F7 /* HelloRxSwift */,
 				75F2BFE82850884300B639F7 /* Products */,
 			);
@@ -58,13 +72,49 @@
 			children = (
 				75F2BFEA2850884300B639F7 /* AppDelegate.swift */,
 				75F2BFEC2850884300B639F7 /* SceneDelegate.swift */,
-				75F2BFEE2850884300B639F7 /* ViewController.swift */,
-				75F2BFF02850884300B639F7 /* Main.storyboard */,
+				75F2C0082850A4B500B639F7 /* Models */,
+				75F2C00F2850A81600B639F7 /* Views */,
+				75F2C0092850A51300B639F7 /* Controllers */,
 				75F2BFF32850884400B639F7 /* Assets.xcassets */,
-				75F2BFF52850884400B639F7 /* LaunchScreen.storyboard */,
 				75F2BFF82850884400B639F7 /* Info.plist */,
 			);
 			path = HelloRxSwift;
+			sourceTree = "<group>";
+		};
+		75F2C0082850A4B500B639F7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				75F2C0062850A4AC00B639F7 /* Task.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		75F2C0092850A51300B639F7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				75F2C00A2850A52D00B639F7 /* TaskListViewController.swift */,
+				75F2C00C2850A53E00B639F7 /* AddTaskViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		75F2C00E2850A80B00B639F7 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				75F2C0102850A84E00B639F7 /* TaskTableViewCell.swift */,
+				75F2C0112850A84E00B639F7 /* TaskTableViewCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		75F2C00F2850A81600B639F7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				75F2C00E2850A80B00B639F7 /* Cell */,
+				758C0D132850AAAB006CA012 /* Main.storyboard */,
+				75F2BFF52850884400B639F7 /* LaunchScreen.storyboard */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +133,10 @@
 			dependencies = (
 			);
 			name = HelloRxSwift;
+			packageProductDependencies = (
+				75F2BFFF285088CE00B639F7 /* RxCocoa */,
+				75F2C001285088CE00B639F7 /* RxSwift */,
+			);
 			productName = HelloRxSwift;
 			productReference = 75F2BFE72850884300B639F7 /* HelloRxSwift.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +165,9 @@
 				Base,
 			);
 			mainGroup = 75F2BFDE2850884300B639F7;
+			packageReferences = (
+				75F2BFFE285088CE00B639F7 /* XCRemoteSwiftPackageReference "RxSwift" */,
+			);
 			productRefGroup = 75F2BFE82850884300B639F7 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,9 +182,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75F2C0132850A84E00B639F7 /* TaskTableViewCell.xib in Resources */,
 				75F2BFF72850884400B639F7 /* LaunchScreen.storyboard in Resources */,
 				75F2BFF42850884400B639F7 /* Assets.xcassets in Resources */,
-				75F2BFF22850884300B639F7 /* Main.storyboard in Resources */,
+				758C0D142850AAAB006CA012 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +196,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75F2BFEF2850884300B639F7 /* ViewController.swift in Sources */,
+				75F2C0072850A4AD00B639F7 /* Task.swift in Sources */,
+				75F2C00D2850A53E00B639F7 /* AddTaskViewController.swift in Sources */,
+				75F2C0122850A84E00B639F7 /* TaskTableViewCell.swift in Sources */,
 				75F2BFEB2850884300B639F7 /* AppDelegate.swift in Sources */,
 				75F2BFED2850884300B639F7 /* SceneDelegate.swift in Sources */,
+				75F2C00B2850A52D00B639F7 /* TaskListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		75F2BFF02850884300B639F7 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				75F2BFF12850884300B639F7 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		75F2BFF52850884400B639F7 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -358,6 +411,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		75F2BFFE285088CE00B639F7 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 6.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		75F2BFFF285088CE00B639F7 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75F2BFFE285088CE00B639F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		75F2C001285088CE00B639F7 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 75F2BFFE285088CE00B639F7 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 75F2BFDF2850884300B639F7 /* Project object */;
 }
